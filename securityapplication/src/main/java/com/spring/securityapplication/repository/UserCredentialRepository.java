@@ -13,6 +13,5 @@ public interface UserCredentialRepository extends JpaRepository<UserCredential,I
     Optional<UserCredential> fetchUser(int id);
 
 
-
-
+    boolean existsByRolesContaining(String roleAdmin);
 }
